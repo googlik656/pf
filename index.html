@@ -1,25 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
+    <meta charset="UTF-8">
     <title>Moje první stránka</title>
+    <style>
+        body {
+            background: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        ul {
+            list-style: square;
+            text-align: left;
+            display: inline-block;
+        }
+        img {
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 60%;
+            background: white;
+        }
+        table, th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<body style="background-color: lightblue;">
+<body>
 
-    <h1 style="color: blue">JMENUJI SE ZULI</h1> 
+    <h1>✨ JMENUJI SE ZULI ✨</h1>
 
-    <h2>O mně</h2>
-    <p>Ahoj! Jsem Zuli a je mi 14 let .</p>
+    <nav>
+        <a href="#omne">O mně</a>
+        <a href="#veci">Oblíbené věci</a>
+        <a href="#tabulka">Tabulka</a>
+        <a href="#obrazky">Obrázky</a>
+    </nav>
 
-    <h2>Moje oblíbené věci</h2>
-    <ul>
-        <li>K-pop music </li>
-        <li>anime</li>
-        <li>Hraní her</li>
-    </ul>
+    <section id="omne">
+        <h2>🌸 O mně 🌸</h2>
+        <p>Ahoj! Jsem <b>Zuli</b>, je mi 14 let a miluju anime i K-pop skupinu Stray Kids!</p>
+    </section>
 
-    <h2>Můj oblíbený obrázek</h2>
-    <img src="https://via.placeholder.com/200" alt="U">
+    <section id="veci">
+        <h2>💜 Moje oblíbené věci 💜</h2>
+        <ul>
+            <li>K-pop (hlavně Stray Kids 🐺)</li>
+            <li>Anime (Naruto, Jujutsu Kaisen, Demon Slayer...)</li>
+            <li>Hraní her 🎮</li>
+        </ul>
+    </section>
 
+    <section id="tabulka">
+        <h2>📊 Moje malá tabulka 📊</h2>
+        <p>Zkusila jsem tabulku – tady je ukázka s mými oblíbenými věcmi:</p>
+        <table>
+            <tr>
+                <th>Věc</th>
+                <th>Proč ji mám ráda</th>
+            </tr>
+            <tr>
+                <td>Stray Kids</td>
+                <td>Skvělá hudba, energie 💖</td>
+            </tr>
+            <tr>
+                <td>Anime</td>
+                <td>Napínavé příběhy a postavy 🌸</td>
+            </tr>
+            <tr>
+                <td>Hry</td>
+                <td>Zábava s kamarády 🎮</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="obrazky">
+        <h2>🌟 Moje oblíbené obrázky 🌟</h2>
+        <p>Stray Kids:</p>
+        <img src="https://i.scdn.co/image/ab6761610000e5ebc3e48d40c88001cc041b19d3" alt="Stray Kids" width="250">
+        <img src="https://i.pinimg.com/736x/f8/20/7d/f8207d0a27c75994f989356e186a4b7a.jpg" alt="Stray Kids 2" width="250">
+
+        <p>Anime:</p>
+        <img src="https://i.pinimg.com/originals/02/f1/cd/02f1cd5a6de8c77de6c58f5abf2c3d56.jpg" alt="Anime 1" width="250">
+        <img src="https://i.pinimg.com/736x/67/0d/f0/670df0f81e7086e0bba39f93445735ab.jpg" alt="Anime 2" width="250">
+    </section>
+
+    <footer>
+        <p>🌸 Vyrobila Zuli | 2025 🌸</p>
+    </footer>
 
 </body>
 </html>
