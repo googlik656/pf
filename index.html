@@ -5,7 +5,7 @@
     <title>Zuli fan stránka</title>
     <style>
         body {
-            background: lightblue;
+            background: #add8e6;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -24,8 +24,9 @@
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
+            transition: 0.3s;
         }
         nav a:hover {
             color: yellow;
@@ -33,6 +34,10 @@
         section {
             padding: 20px;
             text-align: center;
+            margin: 10px 0;
+        }
+        section:nth-child(even) {
+            background: #e0f7fa;
         }
         ul {
             list-style: square;
@@ -43,6 +48,11 @@
             border: 2px solid black;
             border-radius: 10px;
             margin: 10px;
+            transition: 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #555;
         }
         table {
             margin: 0 auto;
@@ -55,6 +65,10 @@
             padding: 8px;
             text-align: center;
         }
+        th {
+            background: #333;
+            color: white;
+        }
         footer {
             text-align: center;
             padding: 15px;
@@ -62,92 +76,148 @@
             color: white;
             margin-top: 30px;
         }
+        .playlist li {
+            margin: 5px 0;
+        }
+        .postavy img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>✨ Vítej na mojí fan stránce ✨</h1>
-        <p>O Stray Kids, anime a manze 🌸</p>
-    </header>
+<header>
+    <h1>✨ Zuli fan stránka ✨</h1>
+    <p>O Stray Kids, anime a manze 🌸</p>
+</header>
 
-    <nav>
-        <a href="#omne">O mně</a>
-        <a href="#veci">Oblíbené věci</a>
-        <a href="#straykids">Stray Kids</a>
-        <a href="#anime">Anime</a>
-        <a href="#manga">Manga</a>
-    </nav>
+<nav>
+    <a href="#omne">O mně</a>
+    <a href="#straykids">Stray Kids</a>
+    <a href="#hudba">Hudba</a>
+    <a href="#anime">Anime</a>
+    <a href="#manga">Manga</a>
+    <a href="#postavy">Postavy</a>
+    <a href="#galerie">Galerie</a>
+</nav>
 
-    <section id="omne">
-        <h2>🌸 O mně 🌸</h2>
-        <p>Ahoj! Jmenuji se <b>Zuli</b>, je mi 14 let a miluju <b>Stray Kids</b>, <b>anime</b> a čtení <b>mangy</b> 📚.</p>
-    </section>
+<section id="omne">
+    <h2>🌸 O mně 🌸</h2>
+    <p>Ahoj! Jmenuji se <b>Zuli</b>, je mi 14 let, hraju badminton a miluju <b>Stray Kids</b>, <b>anime</b> a čtení <b>mangy</b> 📚.<br>
+       Moji oblíbení členové Stray Kids jsou: <b>Felix</b> a <b>Han</b>.</p>
+</section>
 
-    <section id="veci">
-        <h2>💜 Moje oblíbené věci 💜</h2>
+<section id="straykids">
+    <h2>🐺 Stray Kids 🐺</h2>
+    <p>Stray Kids je korejská skupina, kterou miluju! 💖</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Stray_Kids_at_KCON_2018_New_York_3.png" alt="Stray Kids" width="300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Stray_Kids_at_KCON_2018_LA.png" alt="Stray Kids 2" width="300">
+
+    <h3>Oficiální odkazy</h3>
+    <p><a href="https://straykids.jype.com/" target="_blank">🌐 Oficiální web Stray Kids</a></p>
+    <p><a href="https://www.youtube.com/@StrayKids" target="_blank">▶️ YouTube kanál</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Stray_Kids" target="_blank">📖 Wikipedia</a></p>
+</section>
+
+<section id="hudba">
+    <h2>🎶 Oblíbené písničky Stray Kids 🎶</h2>
+    <ul class="playlist">
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Cheese" target="_blank">Cheese</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Ch+Ch+Ch+Boom" target="_blank">Ch Ch Ch Boom</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Red+Light" target="_blank">Red Light</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+0801" target="_blank">0801</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Ceremony" target="_blank">Ceremony</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Hollow" target="_blank">Hollow</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Megaverse" target="_blank">Megaverse</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Jjam" target="_blank">Jjam</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Lost+My+Breath" target="_blank">Lost My Breath</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Ghost" target="_blank">Ghost</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Just+Little" target="_blank">Just Little</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Like+It" target="_blank">Like It</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Cover+Me" target="_blank">Cover Me</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Walking+On+The+Water" target="_blank">Walking On The Water</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Cirkus" target="_blank">Cirkus</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+La+La+La+La+Lala" target="_blank">La La La La Lala</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Gods+Menu" target="_blank">God's Menu</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Base+143" target="_blank">Base 143</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+S+Class" target="_blank">S Class</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Maniac" target="_blank">Maniac</a></li>
+    </ul>
+</section>
+
+<section id="anime">
+    <h2>🎌 Oblíbené anime 🎌</h2>
+    <table>
+        <tr>
+            <th>Název</th>
+            <th>Počet dílů / Poznámka</th>
+            <th>Žánr</th>
+            <th>Odkaz</th>
+        </tr>
+        <tr><td>Jak jsme se reinkarnovali coby sliz</td><td>Pokračuje</td><td>Fantasy, Isekai</td><td><a href="https://myanimelist.net/anime/37400/Tensei_Shitara_Slime_Datta_Ken" target="_blank">Info</a></td></tr>
+        <tr><td>Atelier of Witch Hat</td><td>Pokračuje</td><td>Fantasy, Magie</td><td><a href="https://myanimelist.net/anime/51518/Mahou_Shoujo" target="_blank">Info</a></td></tr>
+        <tr><td>Naruto</td><td>220 + Shippuden 500</td><td>Akční, Dobrodružství</td><td><a href="https://cs.wikipedia.org/wiki/Naruto" target="_blank">Info</a></td></tr>
+        <tr><td>Jujutsu Kaisen</td><td>47+ (pokračuje)</td><td>Nadpřirozené, Akční</td><td><a href="https://cs.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank">Info</a></td></tr>
+        <tr><td>My Hero Academia</td><td>112+</td><td>Akční, Superhrdinské</td><td><a href="https://cs.wikipedia.org/wiki/My_Hero_Academia" target="_blank">Info</a></td></tr>
+        <tr><td>Demon Slayer</td><td>55+ (pokračuje)</td><td>Akční, Fantasy</td><td><a href="https://cs.wikipedia.org/wiki/Demon_Slayer" target="_blank">Info</a></td></tr>
+        <tr><td>Blue Box</td><td>Pokračuje</td><td>Romantické, Školní</td><td><a href="https://myanimelist.net/anime/56423/Blue_Box" target="_blank">Info</a></td></tr>
+        <tr><td>The Fragrant Flower Blooms with Dignity</td><td>Pokračuje</td><td>Romantické, Drama</td><td><a href="https://myanimelist.net/anime/60357/The_Fragant_Flower_Blooms_With_Dignity" target="_blank">Info</a></td></tr>
+        <tr><td>Sakamoto Days</td><td>Pokračuje</td><td>Akční, Komedie</td><td><a href="https://myanimelist.net/anime/59687/Sakamoto_Days" target="_blank">Info</a></td></tr>
+        <tr><td>One Piece</td><td>1000+</td><td>Akční, Dobrodružství</td><td><a href="https://cs.wikipedia.org/wiki/One_Piece" target="_blank">Info</a></td></tr>
+        <tr><td>Doeram</td><td>Pokračuje</td><td>Drama, Fantasy</td><td><a href="https://myanimelist.net/anime/59153/Doeram" target="_blank">Info</a></td></tr>
+        <tr><td>Konan</td><td>Pokračuje</td><td>Akční</td><td><a href="https://myanimelist.net/anime/63891/Konan" target="_blank">Info</a></td></tr>
+        <tr><td>Kaiju No 8</td><td>Pokračuje</td><td>Akční, Sci-Fi</td><td><a href="https://myanimelist.net/anime/60638/Kaiju_No_8" target="_blank">Info</a></td></tr>
+        <tr><td>Apothecary Diaries</td><td>Pokračuje</td><td>Historické, Drama</td><td><a href="https://myanimelist.net/anime/61177/Apothecary_Diaries" target="_blank">Info</a></td></tr>
+        <tr><td>Nemi Hlas</td><td>Pokračuje</td><td>Drama, Romantické</td><td><a href="https://myanimelist.net/anime/62590/Nemi_Hlas" target="_blank">Info</a></td></tr>
+        <tr><td>Ranma ½</td><td>161</td><td>Komedie, Romantické</td><td><a href="https://cs.wikipedia.org/wiki/Ranma_½" target="_blank">Info</a></td></tr>
+        <tr><td>Fire Force</td><td>48</td><td>Akční, Fantasy</td><td><a href="https://cs.wikipedia.org/wiki/Fire_Force" target="_blank">Info</a></td></tr>
+    </table>
+</section>
+
+<section id="manga">
+    <h2>📚 Oblíbené mangy 📚</h2>
+    <ul>
+        <li><a href="https://myanimelist.net/manga/11/Naruto" target="_blank">Naruto</a></li>
+        <li><a href="https://myanimelist.net/manga/114138/Kimetsu_no_Yaiba" target="_blank">Demon Slayer</a></li>
+        <li><a href="https://myanimelist.net/manga/113138/Jujutsu_Kaisen" target="_blank">Jujutsu Kaisen</a></li>
+        <li><a href="https://myanimelist.net/manga/23390/Shingeki_no_Kyojin" target="_blank">Attack on Titan</a></li>
+        <li><a href="https://myanimelist.net/manga/63153/Blue_Box" target="_blank">Blue Box</a></li>
+        <li><a href="https://myanimelist.net/manga/63891/Kaiju_No_8" target="_blank">Kaiju No 8</a></li>
+    </ul>
+</section>
+
+<section id="postavy">
+    <h2>🌟 Oblíbené postavy 🌟</h2>
+    <p>Postavy z anime a mangy, které mám ráda:</p>
+    <div class="postavy">
+        <p>(Obrázky můžeme přidat později)</p>
         <ul>
-            <li>K-pop (hlavně Stray Kids 🐺)</li>
-            <li>Anime (Naruto, Jujutsu Kaisen, Demon Slayer...)</li>
-            <li>Čtení knih a hlavně manga 📖</li>
+            <li>Naruto</li>
+            <li>Tanjiro (Demon Slayer)</li>
+            <li>Yuji Itadori (JJK)</li>
+            <li>Izuku Midoriya (MHA)</li>
+            <li>Rokuro (Blue Box)</li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <section id="straykids">
-        <h2>🐺 Stray Kids 🐺</h2>
-        <p>Stray Kids je korejská skupina, kterou miluju! 💖</p>
-        <img src="https://i.scdn.co/image/ab6761610000e5ebc3e48d40c88001cc041b19d3" alt="Stray Kids" width="250">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Stray_Kids_at_KCON_2018_LA.png" alt="Stray Kids 2" width="300">
+<section id="galerie">
+    <h2>🖼 Galerie obrázků 🖼</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Naruto manga cover" width="200">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Kimetsu_no_Yaiba_Volume_1.jpg" alt="Demon Slayer manga cover" width="200">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Jujutsu_kaisen_volume_1.jpg" alt="Jujutsu Kaisen manga cover" width="200">
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Attack_on_Titan_cover_1.jpg" alt="Attack on Titan manga cover" width="200">
+</section>
 
-        <p><a href="https://straykids.jype.com/" target="_blank">Oficiální web Stray Kids</a></p>
-        <p><a href="https://www.youtube.com/@StrayKids" target="_blank">YouTube kanál Stray Kids</a></p>
-    </section>
-
-    <section id="anime">
-        <h2>🎌 Moje oblíbená anime 🎌</h2>
-        <table>
-            <tr>
-                <th>Název</th>
-                <th>Počet dílů</th>
-                <th>Žánr</th>
-                <th>Odkaz</th>
-            </tr>
-            <tr>
-                <td>Naruto</td>
-                <td>220 + Shippuden 500</td>
-                <td>Akční, dobrodružství</td>
-                <td><a href="https://cs.wikipedia.org/wiki/Naruto" target="_blank">Info</a></td>
-            </tr>
-            <tr>
-                <td>Demon Slayer</td>
-                <td>55+ (pokračuje)</td>
-                <td>Akční, fantasy</td>
-                <td><a href="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba" target="_blank">Info</a></td>
-            </tr>
-            <tr>
-                <td>Jujutsu Kaisen</td>
-                <td>47+ (pokračuje)</td>
-                <td>Nadpřirozené, akční</td>
-                <td><a href="https://myanimelist.net/anime/40748/Jujutsu_Kaisen" target="_blank">Info</a></td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="manga">
-        <h2>📚 Moje manga 📚</h2>
-        <p>Miluju čtení mangy – tady jsou některé:</p>
-        <ul>
-            <li><a href="https://myanimelist.net/manga/11/Naruto" target="_blank">Naruto manga</a></li>
-            <li><a href="https://myanimelist.net/manga/114138/Kimetsu_no_Yaiba" target="_blank">Demon Slayer manga</a></li>
-            <li><a href="https://myanimelist.net/manga/113138/Jujutsu_Kaisen" target="_blank">Jujutsu Kaisen manga</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>🌸 Vyrobila Zuli | 2025 🌸</p>
-    </footer>
+<footer>
+    <p>🌸 Vyrobila Zuli | 2025 🌸</p>
+</footer>
 
 </body>
 </html>
+
+
 
 
