@@ -1,95 +1,109 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>✨ Zuli Fan Stránka | Stray Kids, Anime a Manga 🌸</title>
-    <style>
-        body {
-            background: #add8e6;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #222;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background: #111;
-            color: white;
-        }
-        nav {
-            text-align: center;
-            background: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: yellow;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-            margin: 10px 0;
-        }
-        section:nth-child(even) {
-            background: #e0f7fa;
-        }
-        ul {
-            list-style: square;
-            text-align: left;
-            display: inline-block;
-        }
-        img {
-            border: 2px solid black;
-            border-radius: 10px;
-            margin: 10px;
-            transition: 0.3s;
-        }
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 10px #555;
-        }
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 80%;
-            background: white;
-        }
-        table, th, td {
-            border: 2px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background: #333;
-            color: white;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #333;
-            color: white;
-            margin-top: 30px;
-        }
-        .playlist li {
-            margin: 5px 0;
-        }
-        .postavy img {
-            width: 120px;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>✨ Zuli Fan Stránka | Stray Kids, Anime a Manga 🌸</title>
+<style>
+    body {
+        margin:0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom, #b3e5fc, #e0f7fa);
+        color: #222;
+    }
+    header {
+        text-align:center;
+        padding:30px 10px;
+        background:#111;
+        color:white;
+        box-shadow:0 4px 8px rgba(0,0,0,0.3);
+    }
+    nav {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        background:#333;
+        padding:10px 0;
+        box-shadow:0 2px 4px rgba(0,0,0,0.2);
+    }
+    nav a {
+        color:white;
+        margin:5px 15px;
+        text-decoration:none;
+        font-weight:bold;
+        transition:0.3s;
+    }
+    nav a:hover {
+        color: #ffeb3b;
+        transform:scale(1.1);
+    }
+    section {
+        padding:30px 20px;
+        margin:10px auto;
+        max-width:1000px;
+        border-radius:15px;
+        background:rgba(255,255,255,0.9);
+        box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+        margin-bottom:15px;
+        color:#111;
+        text-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    }
+    .playlist, .anime-list, .manga-list, .postavy-list {
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        gap:15px;
+        list-style:none;
+        padding:0;
+    }
+    .playlist li, .anime-list li, .manga-list li, .postavy-list li {
+        background:#fff3e0;
+        padding:10px;
+        border-radius:10px;
+        text-align:center;
+        box-shadow:0 2px 6px rgba(0,0,0,0.2);
+        transition:0.3s;
+    }
+    .playlist li:hover, .anime-list li:hover, .manga-list li:hover, .postavy-list li:hover {
+        transform:scale(1.05);
+        box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    }
+    a {
+        color:#111;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    a:hover {
+        color:#d32f2f;
+    }
+    img {
+        border-radius:12px;
+        max-width:100%;
+        transition:0.3s;
+    }
+    img:hover {
+        transform:scale(1.1);
+        box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    }
+    .galerie {
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        gap:15px;
+        justify-items:center;
+    }
+    footer {
+        text-align:center;
+        padding:20px;
+        background:#333;
+        color:white;
+        margin-top:30px;
+    }
+</style>
 </head>
 <body>
 
 <header>
-    <h1>✨ Zuli fan stránka ✨</h1>
+    <h1>✨ Zuli Fan Stránka ✨</h1>
     <p>O Stray Kids, anime a manze 🌸</p>
 </header>
 
@@ -111,14 +125,15 @@
 
 <section id="straykids">
     <h2>🐺 Stray Kids 🐺</h2>
-    <p>Stray Kids je korejská skupina, kterou miluju! 💖</p>
-    <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/0ybc8Q5J/Sn-mek-obrazovky-2025-09-14-203644.png' border='0' alt='Sn-mek-obrazovky-2025-09-14-203644'/></a>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Stray_Kids_at_KCON_2018_LA.png" alt="Stray Kids 2" width="300">
-
-    <h3>Oficiální odkazy</h3>
-    <p><a href="https://straykids.jype.com/" target="_blank">🌐 Oficiální web Stray Kids</a></p>
-    <p><a href="https://www.youtube.com/@StrayKids" target="_blank">▶️ YouTube kanál</a></p>
-    <p><a href="https://en.wikipedia.org/wiki/Stray_Kids" target="_blank">📖 Wikipedia</a></p>
+    <div class="galerie">
+        <img src="https://i.postimg.cc/0ybc8Q5J/Sn-mek-obrazovky-2025-09-14-203644.png" alt="Stray Kids 1">
+        <img src="https://i.postimg.cc/HxDrrSwC/Sn-mek-obrazovky-2025-09-14-203914.png" alt="Stray Kids 2">
+    </div>
+    <p>
+        <a href="https://straykids.jype.com/" target="_blank">🌐 Oficiální web</a> |
+        <a href="https://www.youtube.com/@StrayKids" target="_blank">▶️ YouTube</a> |
+        <a href="https://en.wikipedia.org/wiki/Stray_Kids" target="_blank">📖 Wikipedia</a>
+    </p>
 </section>
 
 <section id="hudba">
@@ -149,78 +164,19 @@
 
 <section id="anime">
     <h2>🎌 Oblíbené anime 🎌</h2>
-    <table>
-        <tr>
-            <th>Název</th>
-            <th>Počet dílů / Poznámka</th>
-            <th>Žánr</th>
-            <th>Odkaz</th>
-        </tr>
-        <tr><td>Jak jsme se reinkarnovali coby sliz</td><td>Pokračuje</td><td>Fantasy, Isekai</td><td><a href="https://myanimelist.net/anime/37400/Tensei_Shitara_Slime_Datta_Ken" target="_blank">Info</a></td></tr>
-        <tr><td>Atelier of Witch Hat</td><td>Pokračuje</td><td>Fantasy, Magie</td><td><a href="https://myanimelist.net/anime/51518/Mahou_Shoujo" target="_blank">Info</a></td></tr>
-        <tr><td>Naruto</td><td>220 + Shippuden 500</td><td>Akční, Dobrodružství</td><td><a href="https://cs.wikipedia.org/wiki/Naruto" target="_blank">Info</a></td></tr>
-        <tr><td>Jujutsu Kaisen</td><td>47+ (pokračuje)</td><td>Nadpřirozené, Akční</td><td><a href="https://cs.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank">Info</a></td></tr>
-        <tr><td>My Hero Academia</td><td>112+</td><td>Akční, Superhrdinské</td><td><a href="https://cs.wikipedia.org/wiki/My_Hero_Academia" target="_blank">Info</a></td></tr>
-        <tr><td>Demon Slayer</td><td>55+ (pokračuje)</td><td>Akční, Fantasy</td><td><a href="https://cs.wikipedia.org/wiki/Demon_Slayer" target="_blank">Info</a></td></tr>
-        <tr><td>Blue Box</td><td>Pokračuje</td><td>Romantické, Školní</td><td><a href="https://myanimelist.net/anime/56423/Blue_Box" target="_blank">Info</a></td></tr>
-        <tr><td>The Fragrant Flower Blooms with Dignity</td><td>Pokračuje</td><td>Romantické, Drama</td><td><a href="https://myanimelist.net/anime/60357/The_Fragant_Flower_Blooms_With_Dignity" target="_blank">Info</a></td></tr>
-        <tr><td>Sakamoto Days</td><td>Pokračuje</td><td>Akční, Komedie</td><td><a href="https://myanimelist.net/anime/59687/Sakamoto_Days" target="_blank">Info</a></td></tr>
-        <tr><td>One Piece</td><td>1000+</td><td>Akční, Dobrodružství</td><td><a href="https://cs.wikipedia.org/wiki/One_Piece" target="_blank">Info</a></td></tr>
-        <tr><td>Doeram</td><td>Pokračuje</td><td>Drama, Fantasy</td><td><a href="https://myanimelist.net/anime/59153/Doeram" target="_blank">Info</a></td></tr>
-        <tr><td>Konan</td><td>Pokračuje</td><td>Akční</td><td><a href="https://myanimelist.net/anime/63891/Konan" target="_blank">Info</a></td></tr>
-        <tr><td>Kaiju No 8</td><td>Pokračuje</td><td>Akční, Sci-Fi</td><td><a href="https://myanimelist.net/anime/60638/Kaiju_No_8" target="_blank">Info</a></td></tr>
-        <tr><td>Apothecary Diaries</td><td>Pokračuje</td><td>Historické, Drama</td><td><a href="https://myanimelist.net/anime/61177/Apothecary_Diaries" target="_blank">Info</a></td></tr>
-        <tr><td>Nemi Hlas</td><td>Pokračuje</td><td>Drama, Romantické</td><td><a href="https://myanimelist.net/anime/62590/Nemi_Hlas" target="_blank">Info</a></td></tr>
-        <tr><td>Ranma ½</td><td>161</td><td>Komedie, Romantické</td><td><a href="https://cs.wikipedia.org/wiki/Ranma_½" target="_blank">Info</a></td></tr>
-        <tr><td>Fire Force</td><td>48</td><td>Akční, Fantasy</td><td><a href="https://cs.wikipedia.org/wiki/Fire_Force" target="_blank">Info</a></td></tr>
-    </table>
+    <ul class="anime-list">
+        <li><a href="https://myanimelist.net/anime/37400/Tensei_Shitara_Slime_Datta_Ken" target="_blank">Jak jsme se reinkarnovali coby sliz</a></li>
+        <li><a href="https://myanimelist.net/anime/51518/Mahou_Shoujo" target="_blank">Atelier of Witch Hat</a></li>
+        <li><a href="https://cs.wikipedia.org/wiki/Naruto" target="_blank">Naruto</a></li>
+        <li><a href="https://cs.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank">Jujutsu Kaisen</a></li>
+        <li><a href="https://cs.wikipedia.org/wiki/My_Hero_Academia" target="_blank">My Hero Academia</a></li>
+        <li><a href="https://cs.wikipedia.org/wiki/Demon_Slayer" target="_blank">Demon Slayer</a></li>
+        <li><a href="https://myanimelist.net/anime/56423/Blue_Box" target="_blank">Blue Box</a></li>
+    </ul>
 </section>
 
 <section id="manga">
     <h2>📚 Oblíbené mangy 📚</h2>
-    <ul>
+    <ul class="manga-list">
         <li><a href="https://myanimelist.net/manga/11/Naruto" target="_blank">Naruto</a></li>
-        <li><a href="https://myanimelist.net/manga/114138/Kimetsu_no_Yaiba" target="_blank">Demon Slayer</a></li>
-        <li><a href="https://myanimelist.net/manga/113138/Jujutsu_Kaisen" target="_blank">Jujutsu Kaisen</a></li>
-        <li><a href="https://myanimelist.net/manga/23390/Shingeki_no_Kyojin" target="_blank">Attack on Titan</a></li>
-        <li><a href="https://myanimelist.net/manga/63153/Blue_Box" target="_blank">Blue Box</a></li>
-        <li><a href="https://myanimelist.net/manga/63891/Kaiju_No_8" target="_blank">Kaiju No 8</a></li>
-    </ul>
-</section>
-
-<section id="postavy">
-    <h2>🌟 Oblíbené postavy 🌟</h2>
-    <p>Postavy z anime a mangy, které mám ráda:</p>
-    <div class="postavy">
-        <p>(Obrázky můžeme přidat později)</p>
-        <ul>
-            <li>Naruto</li>
-            <li>Tanjiro/zenitsu (Demon Slayer)</li>
-            <li>Gojo Saturo (JJK)</li>
-            <li>Izuku Midoriya (MHA)</li>
-            <li> taiki/chinatsu (Blue Box)</li>
-        </ul>
-    </div>
-</section>
-
-<section id="galerie">
-    <h2>🖼 Galerie obrázků 🖼</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Naruto manga cover" width="200">
-    <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Kimetsu_no_Yaiba_Volume_1.jpg" alt="Demon Slayer manga cover" width="200">
-    <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Jujutsu_kaisen_volume_1.jpg" alt="Jujutsu Kaisen manga cover" width="200">
-    <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Attack_on_Titan_cover_1.jpg" alt="Attack on Titan manga cover" width="200">
-</section>
-
-<footer>
-    <p>🌸 Vyrobila Zuli | 2025 🌸</p>
-</footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
+        <li><a href="https://myanimelist.net/manga/114138/K
