@@ -7,7 +7,7 @@
 body {
     margin:0;
     font-family: Arial, sans-serif;
-    background: #f3f7fc;
+    background: #add8e6;  /* světle modré pozadí */
     color: #222;
 }
 header {
@@ -80,18 +80,21 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
-/* Galerie */
-.gallery {
+/* Galerie a obrázky */
+.gallery, .card img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
 }
-.gallery img {
+.gallery img, .card img {
     width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: auto;
 }
-.gallery img:hover {
+.gallery img:hover, .card img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
@@ -130,8 +133,8 @@ footer {
 <h2>🐺 Stray Kids 🐺</h2>
 <p>Moji bias jsou <b>Felix</b> a <b>Han</b> 💜. Stray Kids jsou pro mě nejlepší skupina!</p>
 <div class="gallery">
-<img src="https://i.postimg.cc/0ybc8Q5J/Sn-mek-obrazovky-2025-09-14-203644.png" alt="Stray Kids 1">
-<img src="https://i.postimg.cc/c4P8MTL4/Sn-mek-obrazovky-2025-09-14-204556.png" alt="Stray Kids 2">
+<img src="https://via.placeholder.com/200x120?text=Stray+Kids+1" alt="Stray Kids 1">
+<img src="https://via.placeholder.com/200x120?text=Stray+Kids+2" alt="Stray Kids 2">
 </div>
 <h3>Oficiální odkazy</h3>
 <p><a href="https://straykids.jype.com/" target="_blank">🌐 Oficiální web</a></p>
@@ -164,7 +167,7 @@ footer {
 <li>Megaverse</li>
 <li>Ch Ch Ch Boom</li>
 </ul>
-<img src="https://i.postimg.cc/3N5x0fZP/Sn-mek-obrazovky-2025-09-21-193805.png" alt="Hudba" style="width:100%;border-radius:12px;margin-top:15px;">
+<img src="https://via.placeholder.com/200x120?text=Hudba" alt="Hudba">
 </div>
 </section>
 
@@ -197,8 +200,13 @@ footer {
 <td>87</td>
 <td>Drama, akční</td>
 </tr>
+<tr>
+<td>Blue Box</td>
+<td>?</td>
+<td>Romantické, školní</td>
+</tr>
 </table>
-<img src="https://i.postimg.cc/zDFrkfDL/Sn-mek-obrazovky-2025-09-21-193952.png" alt="Anime" style="width:100%;border-radius:12px;margin-top:15px;">
+<img src="https://via.placeholder.com/200x120?text=Anime" alt="Anime">
 </div>
 </section>
 
@@ -210,8 +218,15 @@ footer {
 <li>Demon Slayer</li>
 <li>Jujutsu Kaisen</li>
 <li>Attack on Titan</li>
+<li>Blue Box</li>
+<li>The Fragrant Flower Blooms With Dignity</li>
+<li>Sakamoto Days</li>
+<li>Kaiju No. 8</li>
+<li>Apothecary Diaries</li>
+<li>Ranma 1/2</li>
+<li>Fire Force</li>
 </ul>
-<img src="https://i.postimg.cc/7Zpd4vY8/Sn-mek-obrazovky-2025-09-21-194154.png" alt="Manga" style="width:100%;border-radius:12px;margin-top:15px;">
+<img src="https://via.placeholder.com/200x120?text=Manga" alt="Manga">
 </div>
 </section>
 
@@ -223,7 +238,7 @@ footer {
 <li>Racket Boys</li>
 <li>Fireworks of My Heart</li>
 </ul>
-<img src="https://i.postimg.cc/GhfSP0D8/Sn-mek-obrazovky-2025-01-27-172917.png" alt="K-drama" style="width:100%;border-radius:12px;margin-top:15px;">
+<img src="https://via.placeholder.com/200x120?text=K-drama" alt="K-drama">
 </div>
 </section>
 
@@ -231,8 +246,10 @@ footer {
 <div class="card">
 <h2>🖼 Galerie 🖼</h2>
 <div class="gallery">
-<img src="https://i.postimg.cc/LXvxnGRs/Sn-mek-obrazovky-2025-09-21-194405.png" alt="Galerie 1">
-<img src="https://i.postimg.cc/0QNpHjR8/Sn-mek-obrazovky-2025-09-21-194507.png" alt="Galerie 2">
+<img src="https://via.placeholder.com/200x120?text=Galerie+1" alt="Galerie 1">
+<img src="https://via.placeholder.com/200x120?text=Galerie+2" alt="Galerie 2">
+<img src="https://via.placeholder.com/200x120?text=Galerie+3" alt="Galerie 3">
+<img src="https://via.placeholder.com/200x120?text=Galerie+4" alt="Galerie 4">
 </div>
 </div>
 </section>
