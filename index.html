@@ -4,179 +4,242 @@
 <meta charset="UTF-8">
 <title>✨ Zuli Fan Stránka | Stray Kids, Anime a Manga 🌸</title>
 <style>
-    body {
-        margin:0;
-        font-family: 'Arial', sans-serif;
-        background: linear-gradient(to bottom, #b3e5fc, #e0f7fa);
-        color: #222;
-    }
-    header {
-        text-align:center;
-        padding:30px 10px;
-        background:#111;
-        color:white;
-        box-shadow:0 4px 8px rgba(0,0,0,0.3);
-    }
-    nav {
-        display:flex;
-        justify-content:center;
-        flex-wrap:wrap;
-        background:#333;
-        padding:10px 0;
-        box-shadow:0 2px 4px rgba(0,0,0,0.2);
-    }
-    nav a {
-        color:white;
-        margin:5px 15px;
-        text-decoration:none;
-        font-weight:bold;
-        transition:0.3s;
-    }
-    nav a:hover {
-        color: #ffeb3b;
-        transform:scale(1.1);
-    }
-    section {
-        padding:30px 20px;
-        margin:10px auto;
-        max-width:1000px;
-        border-radius:15px;
-        background:rgba(255,255,255,0.9);
-        box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    }
-    h2 {
-        margin-bottom:15px;
-        color:#111;
-        text-shadow:1px 1px 2px rgba(0,0,0,0.2);
-    }
-    .playlist, .anime-list, .manga-list, .postavy-list {
-        display:grid;
-        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-        gap:15px;
-        list-style:none;
-        padding:0;
-    }
-    .playlist li, .anime-list li, .manga-list li, .postavy-list li {
-        background:#fff3e0;
-        padding:10px;
-        border-radius:10px;
-        text-align:center;
-        box-shadow:0 2px 6px rgba(0,0,0,0.2);
-        transition:0.3s;
-    }
-    .playlist li:hover, .anime-list li:hover, .manga-list li:hover, .postavy-list li:hover {
-        transform:scale(1.05);
-        box-shadow:0 4px 12px rgba(0,0,0,0.3);
-    }
-    a {
-        color:#111;
-        text-decoration:none;
-        font-weight:bold;
-    }
-    a:hover {
-        color:#d32f2f;
-    }
-    img {
-        border-radius:12px;
-        max-width:100%;
-        transition:0.3s;
-    }
-    img:hover {
-        transform:scale(1.1);
-        box-shadow:0 4px 12px rgba(0,0,0,0.3);
-    }
-    .galerie {
-        display:grid;
-        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-        gap:15px;
-        justify-items:center;
-    }
-    footer {
-        text-align:center;
-        padding:20px;
-        background:#333;
-        color:white;
-        margin-top:30px;
-    }
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: #f3f7fc;
+    color: #222;
+}
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #111, #444);
+    color: white;
+    padding: 30px;
+}
+header h1 {
+    font-size: 2.5em;
+}
+nav {
+    text-align: center;
+    background: #222;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ffd700;
+}
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+ul {
+    text-align: left;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background: #eee;
+}
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* Galerie */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+/* Playlist */
+.playlist li {
+    margin: 5px 0;
+}
 </style>
 </head>
 <body>
 
 <header>
-    <h1>✨ Zuli Fan Stránka ✨</h1>
-    <p>O Stray Kids, anime a manze 🌸</p>
+<h1>✨ Zuli Fan Stránka ✨</h1>
+<p>Stray Kids | Anime | Manga | K-drama 🌸</p>
 </header>
 
 <nav>
-    <a href="#omne">O mně</a>
-    <a href="#straykids">Stray Kids</a>
-    <a href="#hudba">Hudba</a>
-    <a href="#anime">Anime</a>
-    <a href="#manga">Manga</a>
-    <a href="#postavy">Postavy</a>
-    <a href="#galerie">Galerie</a>
+<a href="#omne">O mně</a>
+<a href="#straykids">Stray Kids</a>
+<a href="#hudba">Hudba</a>
+<a href="#anime">Anime</a>
+<a href="#manga">Manga</a>
+<a href="#kdrama">K-drama</a>
+<a href="#galerie">Galerie</a>
 </nav>
 
 <section id="omne">
-    <h2>🌸 O mně 🌸</h2>
-    <p>Ahoj! Jmenuji se <b>Zuli</b>, je mi 14 let, hraju badminton a miluju <b>Stray Kids</b>, <b>anime</b> a čtení <b>mangy</b> 📚.<br>
-       Moji oblíbení členové Stray Kids jsou: <b>Felix</b> a <b>Han</b>.</p>
+<div class="card">
+<h2>🌸 O mně 🌸</h2>
+<p>Ahoj! Jmenuji se <b>Zuli</b>, je mi 14 let a miluju <b>Stray Kids</b>, <b>anime</b>, čtení <b>mangy</b> 📚 a hraju badminton 🏸.</p>
+</div>
 </section>
 
 <section id="straykids">
-    <h2>🐺 Stray Kids 🐺</h2>
-    <div class="galerie">
-        <img src="https://i.postimg.cc/0ybc8Q5J/Sn-mek-obrazovky-2025-09-14-203644.png" alt="Stray Kids 1">
-        <img src="https://i.postimg.cc/HxDrrSwC/Sn-mek-obrazovky-2025-09-14-203914.png" alt="Stray Kids 2">
-    </div>
-    <p>
-        <a href="https://straykids.jype.com/" target="_blank">🌐 Oficiální web</a> |
-        <a href="https://www.youtube.com/@StrayKids" target="_blank">▶️ YouTube</a> |
-        <a href="https://en.wikipedia.org/wiki/Stray_Kids" target="_blank">📖 Wikipedia</a>
-    </p>
+<div class="card">
+<h2>🐺 Stray Kids 🐺</h2>
+<p>Moji bias jsou <b>Felix</b> a <b>Han</b> 💜. Stray Kids jsou pro mě nejlepší skupina!</p>
+<div class="gallery">
+<img src="https://i.postimg.cc/0ybc8Q5J/Sn-mek-obrazovky-2025-09-14-203644.png" alt="Stray Kids 1">
+<img src="https://i.postimg.cc/c4P8MTL4/Sn-mek-obrazovky-2025-09-14-204556.png" alt="Stray Kids 2">
+</div>
+<h3>Oficiální odkazy</h3>
+<p><a href="https://straykids.jype.com/" target="_blank">🌐 Oficiální web</a></p>
+<p><a href="https://www.youtube.com/@StrayKids" target="_blank">▶️ YouTube kanál</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Stray_Kids" target="_blank">📖 Wikipedia</a></p>
+</div>
 </section>
 
 <section id="hudba">
-    <h2>🎶 Oblíbené písničky Stray Kids 🎶</h2>
-    <ul class="playlist">
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Cheese" target="_blank">Cheese</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Ch+Ch+Ch+Boom" target="_blank">Ch Ch Ch Boom</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Red+Light" target="_blank">Red Light</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+0801" target="_blank">0801</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Ceremony" target="_blank">Ceremony</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Hollow" target="_blank">Hollow</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Megaverse" target="_blank">Megaverse</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Jjam" target="_blank">Jjam</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Lost+My+Breath" target="_blank">Lost My Breath</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Ghost" target="_blank">Ghost</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Just+Little" target="_blank">Just Little</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Like+It" target="_blank">Like It</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Cover+Me" target="_blank">Cover Me</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Walking+On+The+Water" target="_blank">Walking On The Water</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Cirkus" target="_blank">Cirkus</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+La+La+La+La+Lala" target="_blank">La La La La Lala</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Gods+Menu" target="_blank">God's Menu</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Base+143" target="_blank">Base 143</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+S+Class" target="_blank">S Class</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=Stray+Kids+Maniac" target="_blank">Maniac</a></li>
-    </ul>
+<div class="card">
+<h2>🎶 Oblíbené písničky Stray Kids 🎶</h2>
+<ul class="playlist">
+<li>Cheese</li>
+<li>Red Light</li>
+<li>0801</li>
+<li>Circus</li>
+<li>God's Menu</li>
+<li>S-Class</li>
+<li>Maniac</li>
+<li>Jjam</li>
+<li>Lost My Breath</li>
+<li>Ghost</li>
+<li>Just Little</li>
+<li>Like It</li>
+<li>Cover Me</li>
+<li>Walking on the Water</li>
+<li>La La La La Lala</li>
+<li>Hollow</li>
+<li>Ceremony</li>
+<li>Megaverse</li>
+<li>Ch Ch Ch Boom</li>
+</ul>
+<img src="https://i.postimg.cc/3N5x0fZP/Sn-mek-obrazovky-2025-09-21-193805.png" alt="Hudba" style="width:100%;border-radius:12px;margin-top:15px;">
+</div>
 </section>
 
 <section id="anime">
-    <h2>🎌 Oblíbené anime 🎌</h2>
-    <ul class="anime-list">
-        <li><a href="https://myanimelist.net/anime/37400/Tensei_Shitara_Slime_Datta_Ken" target="_blank">Jak jsme se reinkarnovali coby sliz</a></li>
-        <li><a href="https://myanimelist.net/anime/51518/Mahou_Shoujo" target="_blank">Atelier of Witch Hat</a></li>
-        <li><a href="https://cs.wikipedia.org/wiki/Naruto" target="_blank">Naruto</a></li>
-        <li><a href="https://cs.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank">Jujutsu Kaisen</a></li>
-        <li><a href="https://cs.wikipedia.org/wiki/My_Hero_Academia" target="_blank">My Hero Academia</a></li>
-        <li><a href="https://cs.wikipedia.org/wiki/Demon_Slayer" target="_blank">Demon Slayer</a></li>
-        <li><a href="https://myanimelist.net/anime/56423/Blue_Box" target="_blank">Blue Box</a></li>
-    </ul>
+<div class="card">
+<h2>🎌 Anime 🎌</h2>
+<table>
+<tr>
+<th>Název</th>
+<th>Počet dílů</th>
+<th>Žánr</th>
+</tr>
+<tr>
+<td>Naruto</td>
+<td>720</td>
+<td>Akční, dobrodružství</td>
+</tr>
+<tr>
+<td>Jujutsu Kaisen</td>
+<td>47+ (pokračuje)</td>
+<td>Nadpřirozené, akční</td>
+</tr>
+<tr>
+<td>Demon Slayer</td>
+<td>55+ (pokračuje)</td>
+<td>Akční, fantasy</td>
+</tr>
+<tr>
+<td>Attack on Titan</td>
+<td>87</td>
+<td>Drama, akční</td>
+</tr>
+</table>
+<img src="https://i.postimg.cc/zDFrkfDL/Sn-mek-obrazovky-2025-09-21-193952.png" alt="Anime" style="width:100%;border-radius:12px;margin-top:15px;">
+</div>
 </section>
 
 <section id="manga">
-    <h2>📚 Oblíbené mangy 📚</h2>
-    <ul class="manga-list">
-        <li><a href="https://myanimelist.net/manga/11/Naruto" target="_blank">Naruto</a></li>
-        <li><a href="https://myanimelist.net/manga/114138/K
+<div class="card">
+<h2>📚 Manga 📚</h2>
+<ul>
+<li>Naruto</li>
+<li>Demon Slayer</li>
+<li>Jujutsu Kaisen</li>
+<li>Attack on Titan</li>
+</ul>
+<img src="https://i.postimg.cc/7Zpd4vY8/Sn-mek-obrazovky-2025-09-21-194154.png" alt="Manga" style="width:100%;border-radius:12px;margin-top:15px;">
+</div>
+</section>
+
+<section id="kdrama">
+<div class="card">
+<h2>🎬 K-drama 🎬</h2>
+<ul>
+<li>All of Us Are Dead</li>
+<li>Racket Boys</li>
+<li>Fireworks of My Heart</li>
+</ul>
+<img src="https://i.postimg.cc/GhfSP0D8/Sn-mek-obrazovky-2025-01-27-172917.png" alt="K-drama" style="width:100%;border-radius:12px;margin-top:15px;">
+</div>
+</section>
+
+<section id="galerie">
+<div class="card">
+<h2>🖼 Galerie 🖼</h2>
+<div class="gallery">
+<img src="https://i.postimg.cc/LXvxnGRs/Sn-mek-obrazovky-2025-09-21-194405.png" alt="Galerie 1">
+<img src="https://i.postimg.cc/0QNpHjR8/Sn-mek-obrazovky-2025-09-21-194507.png" alt="Galerie 2">
+</div>
+</div>
+</section>
+
+<footer>
+<p>🌸 Vyrobila Zuli | 2025 🌸</p>
+</footer>
+
+</body>
+</html>
